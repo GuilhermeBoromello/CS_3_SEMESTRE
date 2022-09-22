@@ -1,0 +1,63 @@
+section
+{
+    margin: 2em auto;
+    width: 70vw;
+}
+
+#section-titulo
+{
+    background-image: url("../img/aboutFundo.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+    position: relative;
+}
+
+#section-titulo::before
+{
+    background-color: rgba(0, 0, 0, .6);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+h1 > span
+{color: var(--cor-padrao);}
+
+#section-descricao > article
+{margin-top: 1em;}
+
+#section-descricao > article p
+{
+    color: var(--color); 
+    line-height: 1.2em;
+    text-align: center;
+}
+
+h3
+{
+    color: var(--cor-padrao);
+    font-size: 2em;
+    font-weight: lighter;
+    text-align: center;
+}
+
+#section-integrantes > article
+{
+    display: flex;
+    margin: 1em auto 0;
+    width: 100%;
+}
+
+.div-integrantes
+{
+    background-color: var(--bg-destaque);
+    border-radius: 10px;
+    margin: 0 1em;
+    padding: 1em 2em;
+    width: 50vw;
+}
