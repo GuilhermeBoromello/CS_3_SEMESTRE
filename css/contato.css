@@ -1,0 +1,150 @@
+section
+{
+    justify-content: space-between;
+    display: flex;
+    margin: 2em auto;
+    position: relative;
+    width: 70%;
+}
+
+section > article
+{width: 48%;}
+
+#div-address-top .bi
+{
+    color: var(--cor-padrao);
+    font-size: 1.5em;
+    margin-right: 8px;
+}
+
+#div-address-top > p 
+{
+    color: var(--color);
+    font-size: 1.2em;
+}
+
+#div-address-top > p:nth-of-type(even)
+{margin: .5em 0;}
+
+iframe
+{
+    display: block;
+    margin-top: .5em;
+    width: 100%;
+}
+
+#article-divider
+{
+    background-color: var(--color);    
+    border-radius: 10px;
+    width: 3px;
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+}
+
+label
+{
+    color: var(--color);
+    margin-bottom: .5em;
+}
+
+input, textarea
+{
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid var(--color);
+    color: var(--color);
+    font-size: 1em;
+    margin-bottom: 1em;
+    outline: none;
+    padding: 0.5em;
+    resize: none;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus, textarea:focus
+{
+    border-color: var(--cor-padrao);
+    border-radius: 0px 10px 10px;
+}
+
+button
+{
+    align-self: center;
+    background-color: transparent;
+    border: 1px solid var(--cor-padrao);
+    border-radius: 5px;
+    color: var(--cor-padrao);
+    font-family: 'Poiret One';
+    letter-spacing: 1px;
+    padding: 1em;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    width: fit-content;
+}
+
+button:hover
+{
+    cursor: pointer;
+    color: var(--bg-destaque);
+    background-color: var(--cor-padrao);
+}
+
+@media (max-width: 650px) 
+{
+    section 
+    {width: 90%;}
+
+    #article-address
+    {width: 100%;}
+
+    #article-divider, #article-form
+    {display: none;}   
+
+    #div-address-top .bi
+    {
+        color: var(--cor-padrao);
+        font-size: 1.3em;
+        margin-right: 8px;
+    }
+
+    #div-address-top > p 
+    {
+        color: var(--color);
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 651px) and (max-width: 950px)
+{
+    section
+    {width: 95%;}
+
+    #div-address-top .bi
+    {
+        color: var(--cor-padrao);
+        font-size: 1.4em;
+        margin-right: 8px;
+    }
+
+    #div-address-top > p 
+    {
+        color: var(--color);
+        font-size: 1.1em;
+    }
+
+    button
+    {align-self: flex-start;}
+}
+
+@media (min-width: 951px) and (max-width: 1000px)
+{
+    section
+    {width: 80%;}
+}

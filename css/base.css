@@ -50,7 +50,7 @@ a
 
 .nav-link
 {
-    color: var(--cor-padrao);
+    color: var(--color);
     display: inline;
     margin-left: 1em;
     text-transform: uppercase;
@@ -99,3 +99,24 @@ strong, small
 
 .bi-github
 {margin: 0 1em;}
+
+header > button
+{display: none; transition: 3s ease-in;}
+
+
+@media  (max-width: 600px) {
+    
+    header
+    {
+        flex-direction: column;
+        row-gap: .5em;
+        justify-content: center; 
+    }
+
+    strong
+    {font-size: 1.1em;}
+
+    span, small
+    {font-size: .8em;}
+
+}
